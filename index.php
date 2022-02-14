@@ -55,5 +55,56 @@ $employ1 -> imprimir();
 ?>
 </section>
 
+<section class = "ej02 ex">
+<?php
+ echo "<h3> Exercici 2</h3>
+ 	<p>Clase Shape </p>";
+ echo "<p>Escriu un programa que defineixi una classe Shape amb un constructor que rebi com a paràmetres l'ample i alt. Defineix dues subclasses; Triangle i Rectangle que heretin de Shape i que calculin respectivament l'àrea de la forma area()</p>
+ 	<p>A l'arxiu main defineix dos objectes, un triangle i un rectangle i truca al mètode area de cadascun.</p>";
+
+class Shape {
+
+	public $ancho;
+	public $alto;
+
+	public function __construct($ancho , $alto){
+		$this-> ancho = $ancho;
+		$this -> alto = $alto;
+	}
+	
+	
+} 
+
+
+class Triangle extends Shape {
+	public function areaTri(){
+		$areaTriangulo = (($this->ancho * $this->alto)/2);
+		echo $areaTriangulo;
+	}
+}
+
+
+class Rectangle extends Shape {
+	public function areaRec(){
+		$areaRectangulo = ($this->ancho * $this->alto);
+		echo $areaRectangulo;
+	}
+}
+
+
+
+$triangle = new Triangle(5,3);
+$triangle -> areaTri();
+echo"<br>";
+$rectangle = new Rectangle (5 , 6);
+$rectangle -> areaRec();
+
+
+
+ ?>
+</section>
+
+
+
 </body>
 </html>
