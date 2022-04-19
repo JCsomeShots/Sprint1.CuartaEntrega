@@ -67,13 +67,13 @@ $employ1 -> imprimir();
 	require "./triangulo.php";
 
 $triangle = new Triangle(5,3);
-$triangle -> areaTriangulo();
+$triangle ->areaTrianguloImprimir();
 echo"<br>";
-$rectangle = new Rectangulo (5 , 6);
-$rectangle -> areaRectangulo();
+$rectangle1 = new Rectangulo (5 , 6);
+$rectangle1 -> areaRectanguloImprimir();
 echo"<br>";
-$rectangle = new Rectangulo (3 , 6);
-$rectangle -> areaRectangulo();
+$rectangle2 = new Rectangulo (3 , 6);
+$rectangle2 -> areaRectanguloImprimir();
 
 
  ?>
