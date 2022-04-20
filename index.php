@@ -66,14 +66,20 @@ $employ1 -> imprimir();
 	require "./rectangulo.php";
 	require "./triangulo.php";
 
+function imprimir ($figura){
+		echo "El área del ". $figura->forma . " de " . $figura->ancho . "m. de ancho por ".$figura->alto . "m. de alto sera: ".$figura->area() . "m2 <br>";
+	}
+
+
 $triangle = new Triangle(5,3);
-$triangle ->areaTrianguloImprimir();
-echo"<br>";
+$triangle1 = new Triangle(8,3);
 $rectangle1 = new Rectangulo (5 , 6);
-$rectangle1 -> areaRectanguloImprimir();
-echo"<br>";
 $rectangle2 = new Rectangulo (3 , 6);
-$rectangle2 -> areaRectanguloImprimir();
+	
+imprimir ($rectangle2);
+imprimir ($rectangle1);
+imprimir ($triangle);
+imprimir ($triangle1);
 
 
  ?>
