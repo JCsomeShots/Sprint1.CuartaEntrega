@@ -1,10 +1,14 @@
 <?php 
 class Rectangulo extends Shape
 {
-    public $forma = 'rectangle';
+    private $forma = 'rectangle';
     
     // public function area (){
-    // 	  return parent::area();
-	  // }
+	// 	return parent::area();
+	// }
+    
+    public function getForma(){
+		return $this->forma ;
+	}
 }
 ?>
