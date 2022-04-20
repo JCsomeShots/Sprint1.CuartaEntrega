@@ -1,15 +1,26 @@
 <?php 
 class Triangle extends Shape {
        
-	private $forma = 'triangle'  ;
+	private $ancho;
+	private $alto;
 
-	public function getForma(){
-		return $this->forma ;
+	public function __construct($ancho , $alto)
+	{
+		$this-> ancho = $ancho;
+		$this-> alto = $alto;
+	}
+	
+	public function getAncho(){
+		return $this->ancho;
+	}
+	public function getAlto(){
+		return $this->alto;
 	}
 
-    	public function area (){
-		return (parent::area())/2;
-	}
+	public function area()
+    	{
+        return $this->ancho * $this->alto;
+    	}
 
 }
 ?>
