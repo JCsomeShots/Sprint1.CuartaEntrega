@@ -67,7 +67,7 @@ $employ1 -> imprimir();
 	require "./triangulo.php";
 
 function imprimir ($figura){
-		echo "El área del ". $figura->forma . " de " . $figura->ancho . "m. de ancho por ".$figura->alto . "m. de alto sera: ".$figura->area() . "m2 <br>";
+		echo "El área del ". $figura->getForma() . " de " . $figura->getAncho() . "m. de ancho por ".$figura->getAlto() . "m. de alto sera: ".$figura->area() . "m2 <br>";
 	}
 
 
